@@ -161,6 +161,10 @@ for (let s in STUDY) if (q.includes(s)) { memory.lastTopic = s; return res.json(
 
 if (q.match(/[0-9+-*/]/)) return res.json({ ans: calculator(q) }); if (q.includes(" to ")) return res.json({ ans: convertUnit(q) });
 
-const wiki = await fetchFromWikipedia(q); res.json({ ans: wiki }); });
+const 
+// ----------- SERVER -----------
+const PORT = process.env.PORT || 3000;
 
-// ---------------- SERVER ---------------- app.listen(5000, () => console.log("🔥 Topper X Ultra Backend running on http://localhost:5000") );
+app.listen(PORT, () => {
+  console.log(`🚀 Topper X Backend running on port ${PORT}`);
+});
