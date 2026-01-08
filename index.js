@@ -8,21 +8,139 @@ const app = express(); app.use(express.json());
 
 // ---------------- MOTIVATION ---------------- const MOTIVATION = [ "Kill the comfort, let the champion be born.", "Discipline is choosing pain now to avoid pain later.", "Comfort creates cowards; struggle creates kings.", "No pain, no power.", "Average is the enemy.", "Suffer now, smile later.", "Hard work never betrays.", "Dreams need discipline, not excuses.", "Be consistent, not busy.", "Your future is created by what you do today.", "Push yourself, because no one else is going to do it for you.", "Success is earned, not given.", "Small daily improvements lead to stunning results.", "The harder you work, the luckier you get." ]; let motivationIndex = 0;
 
-// ---------------- ROADMAPS ---------------- const ROADMAPS = { neet: NEET ROADMAP 🔥   Class 9–10: NCERT strong   Class 11: PCB advanced concepts   Class 12: Deep NCERT revision + mocks   Result: MBBS/BDS,
+// ================= ROADMAPS =================
 
-jee: JEE ROADMAP 🔥   Class 9–10: PCM basics   Class 11–12: Advanced PCM   Result: IIT/NIT/IIIT,
+const ROADMAPS = {
 
-nda: NDA ROADMAP 🔥   Maths + GAT + English   Written + SSB + Fitness,
+  jee: {
+    title: "JEE ROADMAP 🔥",
+    duration: "2 Years",
+    stages: [
+      "Class 9–10: Basics (NCERT strong)",
+      "Class 11: PCM Concepts + Daily Practice",
+      "Class 12: Advanced Problems + Revision",
+      "Mocks + PYQs (20 Years)"
+    ],
+    subjects: {
+      physics: ["Mechanics", "Thermodynamics", "Optics", "Modern Physics"],
+      chemistry: ["Physical", "Organic", "Inorganic"],
+      maths: ["Algebra", "Calculus", "Coordinate Geometry", "Vectors"]
+    },
+    result: "IIT / NIT / IIIT"
+  },
 
-ias: IAS ROADMAP 🔥   NCERT 6–12   Prelims → Mains → Interview,
+  neet: {
+    title: "NEET ROADMAP 🧬",
+    duration: "2 Years",
+    stages: [
+      "Class 9–10 Biology Foundation",
+      "Class 11 Bio + Physics + Chemistry",
+      "Class 12 Completion + Revision",
+      "Full Syllabus Mock Tests"
+    ],
+    subjects: {
+      biology: ["Botany", "Zoology"],
+      physics: ["Mechanics", "Waves", "Modern Physics"],
+      chemistry: ["Physical", "Organic", "Inorganic"]
+    },
+    result: "MBBS / BDS / Medical Colleges"
+  },
 
-ssc: SSC ROADMAP 🔥   Quant + Reasoning + English + GK,
+  nda: {
+    title: "NDA ROADMAP 🪖",
+    duration: "1–2 Years",
+    stages: [
+      "Class 10 Maths + English",
+      "Class 11–12 PCM (basic)",
+      "GAT Preparation",
+      "SSB Interview + Physical Fitness"
+    ],
+    subjects: {
+      maths: ["Algebra", "Trigonometry", "Mensuration"],
+      gat: ["English", "GK", "History", "Geography", "Polity", "Science"],
+      physical: ["Running", "Push-ups", "Stamina"]
+    },
+    result: "Indian Army / Navy / Air Force"
+  },
 
-banking: BANKING ROADMAP 🔥   Quant + Reasoning + English + GK,
+  pcm: {
+    title: "PCM ROADMAP 📘",
+    duration: "Class 11–12",
+    focus: [
+      "NCERT Mastery",
+      "Numerical Practice",
+      "Conceptual Clarity",
+      "Board Exam Excellence"
+    ],
+    result: "Boards + Competitive Exams"
+  },
 
-aiims: AIIMS ROADMAP 🔥   PCB strong + test series,
+  btech: {
+    title: "B-TECH ROADMAP 💻",
+    duration: "4 Years",
+    years: {
+      year1: ["Engineering Maths", "Physics", "Programming"],
+      year2: ["DSA", "OOPS", "Core Subjects"],
+      year3: ["Projects", "Internships", "System Design"],
+      year4: ["Placements", "Final Project"]
+    },
+    result: "Software Engineer / Core Engineer"
+  },
 
-iit: IIT ROADMAP 🔥   JEE Main + Advanced };
+  bed: {
+    title: "B-ED ROADMAP 🎓",
+    duration: "2 Years",
+    focus: [
+      "Teaching Methods",
+      "Child Psychology",
+      "Lesson Planning",
+      "Internship (Teaching Practice)"
+    ],
+    result: "Government / Private Teacher"
+  },
+
+  ias: {
+    title: "IAS ROADMAP 🇮🇳",
+    duration: "3–4 Years",
+    stages: [
+      "NCERT (Class 6–12)",
+      "Prelims (GS + CSAT)",
+      "Mains (GS + Optional)",
+      "Interview (Personality Test)"
+    ],
+    subjects: [
+      "History",
+      "Geography",
+      "Polity",
+      "Economy",
+      "Ethics",
+      "Current Affairs"
+    ],
+    result: "IAS Officer"
+  },
+
+  ips: {
+    title: "IPS ROADMAP 🚓",
+    duration: "3–4 Years",
+    stages: [
+      "UPSC Prelims",
+      "UPSC Mains",
+      "Interview",
+      "Police Training"
+    ],
+    focus: [
+      "Law",
+      "Internal Security",
+      "Physical Fitness",
+      "Leadership"
+    ],
+    result: "IPS Officer"
+  }
+
+};
+
+// ================= EXPORT =================
+export default ROADMAPS;
 
 // ---------------- STUDY MATERIAL (CLASS 6–12) ---------------- const STUDY = { "class 6 maths": { chapters: ["Numbers", "Algebra Basics", "Geometry", "Fractions", "Decimals"], formulas: ["Area = l × b", "Perimeter of square = 4a"], practice: { easy: [{ q: "2 + 3", ans: "5" }], moderate: [{ q: "5x + 3 = 18", ans: "x = 3" }], hard: [{ q: "Factorize x² + 5x + 6", ans: "(x+2)(x+3)" }] } },
 
