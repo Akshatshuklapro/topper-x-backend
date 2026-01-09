@@ -1,13 +1,22 @@
+
 {
   "name": "topper-x-backend",
   "version": "1.0.0",
-  "type": "module",
+  "description": "Topper X AI study assistant backend",
   "main": "index.js",
+  "type": "module",
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "dev": "nodemon index.js"
   },
+  "keywords": ["topper-x", "ai", "study", "education"],
+  "author": "Akshat",
+  "license": "MIT",
   "dependencies": {
     "express": "^4.18.2",
     "node-fetch": "^3.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
   }
 }
