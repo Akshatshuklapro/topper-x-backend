@@ -140,14 +140,18 @@ const ROADMAPS = {
 };
 
 // ---------------- STUDY MATERIAL (CLASS 6–12) ---------------- 
+
 const STUDY = {
+
+  // ==================================================
+  // CLASS 6
+  // ==================================================
   "class 6 maths": {
     chapters: [
       "Knowing Our Numbers",
       "Whole Numbers",
       "Playing with Numbers",
-      "Basic Geometrical Ideas",
-      "Understanding Elementary Shapes",
+      "Basic Geometry",
       "Integers",
       "Fractions",
       "Decimals",
@@ -155,31 +159,29 @@ const STUDY = {
       "Data Handling"
     ],
     formulas: [
-      "Perimeter of rectangle = 2(l + b)",
-      "Area of rectangle = l * b",
-      "Perimeter of square = 4a",
-      "Area of square = a^2"
-    ],
-    practice: {
-      easy: [
-        { q: "15 + 27", ans: "42" },
-        { q: "100 - 45", ans: "55" }
-      ],
-      moderate: [
-        { q: "Find perimeter of square of side 5 cm", ans: "20 cm" },
-        { q: "Simplify 3/4 + 2/4", ans: "5/4" }
-      ],
-      hard: [
-        { q: "Find area of rectangle with l=8, b=5", ans: "40 sq units" }
-      ]
-    }
+      "Addition = a + b",
+      "Subtraction = a - b",
+      "Multiplication = a * b",
+      "Division = a / b",
+      "LCM * HCF = product of numbers",
+      "Perimeter rectangle = 2 * (l + b)",
+      "Area rectangle = l * b",
+      "Perimeter square = 4 * a",
+      "Area square = a * a",
+      "Fraction addition = (a/b + c/d) = (ad + bc)/bd",
+      "Fraction subtraction = (a/b - c/d) = (ad - bc)/bd",
+      "Decimal to fraction = value / 10^n",
+      "Mean = sum / n"
+    ]
   },
 
+  // ==================================================
+  // CLASS 7
+  // ==================================================
   "class 7 maths": {
     chapters: [
       "Integers",
       "Fractions and Decimals",
-      "Data Handling",
       "Simple Equations",
       "Lines and Angles",
       "Triangles",
@@ -189,71 +191,60 @@ const STUDY = {
       "Perimeter and Area"
     ],
     formulas: [
-      "Area of triangle = 1/2 * b * h",
-      "Perimeter of circle = 2 * π * r",
+      "Area triangle = (1/2) * b * h",
+      "Perimeter circle = 2 * pi * r",
+      "Area circle = pi * r * r",
       "Profit = SP - CP",
-      "Loss = CP - SP"
-    ],
-    practice: {
-      easy: [
-        { q: "(-5) + 8", ans: "3" },
-        { q: "Convert 0.75 into fraction", ans: "3/4" }
-      ],
-      moderate: [
-        { q: "Solve 3x + 7 = 16", ans: "x = 3" },
-        { q: "Find area of triangle b=10, h=6", ans: "30 sq units" }
-      ],
-      hard: [
-        { q: "Find x if 5x - 9 = 16", ans: "x = 5" }
-      ]
-    }
+      "Loss = CP - SP",
+      "Profit percent = (Profit / CP) * 100",
+      "Loss percent = (Loss / CP) * 100",
+      "Simple equation ax + b = c",
+      "Complementary angles sum = 90",
+      "Supplementary angles sum = 180",
+      "Adjacent angles share a side"
+    ]
   },
 
+  // ==================================================
+  // CLASS 8
+  // ==================================================
   "class 8 maths": {
     chapters: [
       "Rational Numbers",
-      "Linear Equations in One Variable",
-      "Understanding Quadrilaterals",
-      "Practical Geometry",
-      "Data Handling",
+      "Linear Equations",
+      "Quadrilaterals",
       "Squares and Square Roots",
       "Cubes and Cube Roots",
-      "Comparing Quantities",
       "Mensuration",
-      "Algebraic Expressions"
+      "Algebraic Expressions",
+      "Factorisation",
+      "Graphs"
     ],
     formulas: [
-      "Square of a number = a^2",
-      "Cube of a number = a^3",
+      "Square = a * a",
+      "Cube = a * a * a",
+      "Square root = sqrt(x)",
+      "Cube root = cubert(x)",
       "Simple Interest = (P * R * T) / 100",
-      "Total surface area of cube = 6a^2"
-    ],
-    practice: {
-      easy: [
-        { q: "Find square of 12", ans: "144" },
-        { q: "Find cube of 5", ans: "125" }
-      ],
-      moderate: [
-        { q: "Solve 2x + 5 = 15", ans: "x = 5" },
-        { q: "Find SI if P=1000, R=5, T=2", ans: "100" }
-      ],
-      hard: [
-        { q: "Find x if 3x - 7 = 11", ans: "x = 6" }
-      ]
-    }
+      "Compound Interest = P * (1 + R/100)^T",
+      "Area trapezium = (1/2) * (a + b) * h",
+      "Surface area cube = 6 * a * a",
+      "Volume cube = a^3",
+      "Linear equation ax + b = c"
+    ]
   },
 
+  // ==================================================
+  // CLASS 9
+  // ==================================================
   "class 9 maths": {
     chapters: [
       "Number Systems",
       "Polynomials",
       "Coordinate Geometry",
-      "Linear Equations in Two Variables",
-      "Introduction to Euclid Geometry",
-      "Lines and Angles",
+      "Linear Equations",
       "Triangles",
       "Quadrilaterals",
-      "Areas of Parallelograms",
       "Circles",
       "Surface Areas and Volumes",
       "Statistics",
@@ -262,121 +253,121 @@ const STUDY = {
     formulas: [
       "(a + b)^2 = a^2 + 2ab + b^2",
       "(a - b)^2 = a^2 - 2ab + b^2",
-      "Area of circle = πr^2",
-      "Volume of cube = a^3"
-    ],
-    practice: {
-      easy: [
-        { q: "Evaluate (2 + 3)^2", ans: "25" },
-        { q: "Find value of π (approx)", ans: "3.14" }
-      ],
-      moderate: [
-        { q: "Solve 3x - 4 = 11", ans: "x = 5" },
-        { q: "Find area of circle r=7", ans: "154 sq units" }
-      ],
-      hard: [
-        { q: "Factorize x^2 + 7x + 10", ans: "(x+5)(x+2)" }
-      ]
-    }
+      "a^2 - b^2 = (a - b)(a + b)",
+      "Distance formula = sqrt((x2-x1)^2 + (y2-y1)^2)",
+      "Midpoint = ((x1+x2)/2 , (y1+y2)/2)",
+      "Area circle = pi * r * r",
+      "Surface area cube = 6a^2",
+      "Volume cube = a^3",
+      "Mean = sum / n",
+      "Probability = favorable / total"
+    ]
   },
-  
-STUDY["class 10 maths"] = {
-chapters: [
-"Real Numbers",
-"Polynomials",
-"Pair of Linear Equations",
-"Quadratic Equations",
-"Arithmetic Progressions",
-"Triangles",
-"Circles",
-"Trigonometry",
-"Coordinate Geometry",
-"Statistics",
-"Probability"
-],
-formulas: [
-"ax² + bx + c = 0",
-"Discriminant D = b² − 4ac",
-"sin²θ + cos²θ = 1",
-"Area of circle = πr²",
-"Mean = Σxi / n"
-],
-practice: {
-easy: [
-{ q: "Find D of x² − 5x + 6", ans: "D = 1" }
-],
-moderate: [
-{ q: "Solve x² − 7x + 10 = 0", ans: "x = 5, 2" }
-],
-hard: [
-{ q: "Find 10th term of AP: 2, 5, 8…", ans: "a₁₀ = 29" }
-]
-}
-};
 
-STUDY["class 11 maths"] = {
-chapters: [
-"Sets",
-"Relations & Functions",
-"Trigonometry",
-"Complex Numbers",
-"Permutations & Combinations",
-"Binomial Theorem",
-"Sequences & Series",
-"Straight Lines",
-"Limits & Derivatives"
-],
-formulas: [
-"nCr = n! / r!(n−r)!",
-"(a + b)ⁿ expansion",
-"i² = −1",
-"Slope m = (y₂−y₁)/(x₂−x₁)"
-],
-practice: {
-easy: [
-{ q: "Find 5C2", ans: "10" }
-],
-moderate: [
-{ q: "Find slope between (2,3) and (4,7)", ans: "m = 2" }
-],
-hard: [
-{ q: "Expand (x + 2)⁴", ans: "x⁴ + 8x³ + 24x² + 32x + 16" }
-]
-}
-};
+  // ==================================================
+  // CLASS 10
+  // ==================================================
+  "class 10 maths": {
+    chapters: [
+      "Real Numbers",
+      "Polynomials",
+      "Pair of Linear Equations",
+      "Quadratic Equations",
+      "Arithmetic Progressions",
+      "Triangles",
+      "Coordinate Geometry",
+      "Trigonometry",
+      "Circles",
+      "Surface Areas and Volumes",
+      "Statistics",
+      "Probability"
+    ],
+    formulas: [
+      "Quadratic equation ax^2 + bx + c = 0",
+      "Discriminant D = b^2 - 4ac",
+      "Roots = (-b +- sqrt(D)) / (2a)",
+      "AP nth term = a + (n-1)d",
+      "AP sum = n/2 * (2a + (n-1)d)",
+      "sin A = opposite / hypotenuse",
+      "cos A = base / hypotenuse",
+      "tan A = opposite / base",
+      "sin^2 A + cos^2 A = 1",
+      "Area sector = (theta/360) * pi * r^2",
+      "Mean = sum xi / n",
+      "Mode = most frequent value",
+      "Median = middle value"
+    ]
+  },
 
-STUDY["class 12 maths"] = {
-chapters: [
-"Relations & Functions",
-"Inverse Trigonometry",
-"Matrices",
-"Determinants",
-"Continuity & Differentiability",
-"Applications of Derivatives",
-"Integrals",
-"Differential Equations",
-"Vector Algebra",
-"3D Geometry",
-"Linear Programming",
-"Probability"
-],
-formulas: [
-"|A| determinant",
-"∫ xⁿ dx = xⁿ⁺¹/(n+1)",
-"d/dx(sin x) = cos x",
-"P(A) = n(A)/n(S)"
-],
-practice: {
-easy: [
-{ q: "Find determinant of [[1,2],[3,4]]", ans: "-2" }
-],
-moderate: [
-{ q: "Differentiate x³ + 5x", ans: "3x² + 5" }
-],
-hard: [
-{ q: "Solve dy/dx = x²", ans: "y = x³/3 + C" }
-]
-}
+  // ==================================================
+  // CLASS 11 (JEE FOUNDATION)
+  // ==================================================
+  "class 11 maths": {
+    chapters: [
+      "Sets",
+      "Relations and Functions",
+      "Trigonometric Functions",
+      "Complex Numbers",
+      "Permutations and Combinations",
+      "Binomial Theorem",
+      "Sequences and Series",
+      "Straight Lines",
+      "Conic Sections",
+      "Limits and Derivatives"
+    ],
+    formulas: [
+      "nPr = n! / (n-r)!",
+      "nCr = n! / (r! * (n-r)!)",
+      "(a + b)^n binomial expansion",
+      "i^2 = -1",
+      "Modulus complex = sqrt(a^2 + b^2)",
+      "Argument = tan inverse (b/a)",
+      "Slope = (y2 - y1)/(x2 - x1)",
+      "Equation line = y - y1 = m(x - x1)",
+      "Limit basic rules",
+      "Derivative x^n = n * x^(n-1)",
+      "sin^2 x + cos^2 x = 1",
+      "tan x = sin x / cos x"
+    ]
+  },
+
+  // ==================================================
+  // CLASS 12 (BOARD + JEE + NDA)
+  // ==================================================
+  "class 12 maths": {
+    chapters: [
+      "Relations and Functions",
+      "Inverse Trigonometry",
+      "Matrices",
+      "Determinants",
+      "Continuity",
+      "Differentiability",
+      "Applications of Derivatives",
+      "Integrals",
+      "Differential Equations",
+      "Vector Algebra",
+      "3D Geometry",
+      "Linear Programming",
+      "Probability"
+    ],
+    formulas: [
+      "Determinant 2x2 = ad - bc",
+      "Determinant 3x3 expansion",
+      "Inverse matrix = adj(A)/det(A)",
+      "Integration x^n = x^(n+1)/(n+1)",
+      "Integration sin x = -cos x",
+      "Integration cos x = sin x",
+      "Integration e^x = e^x",
+      "dy/dx rules",
+      "Vector dot product = |a||b|cos theta",
+      "Vector cross product magnitude = |a||b|sin theta",
+      "Direction cosines l,m,n",
+      "Probability = favorable / total outcomes",
+      "Bayes theorem formula",
+      "Mean of probability distribution = sum xi*pi"
+    ]
+  }
+
 };
 
 // ---------------- PRACTICE GENERATOR ---------------- function generatePractice(topic) { if (!STUDY[topic]) return "Practice not available.";
