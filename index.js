@@ -369,15 +369,7 @@ const STUDY = {
   }
 
 };
-
-// ---------------- PRACTICE GENERATOR ---------------- function generatePractice(topic) { if (!STUDY[topic]) return "Practice not available.";
-
-const s = STUDY[topic]; let out = "";
-
-["easy", "moderate", "hard"].forEach(level => { out += \n--- ${level.toUpperCase()} ---\n; s.practice[level].forEach((p, i) => { out += Q${i + 1}: ${p.q}\nAns: ${p.ans}\n; }); });
-
-return out; }
-
+ 
 // ---------------- UTILITIES ---------------- function calculator(expr) { try { return "Result: " + eval(expr); } catch { return "Invalid expression 😅"; } }
 
 function convertUnit(q) { const match = q.match(/(\d+.?\d*)\s*(kg|g|cm|m|km)\sto\s(kg|g|cm|m|km)/i); if (!match) return "Cannot parse conversion 😅";
