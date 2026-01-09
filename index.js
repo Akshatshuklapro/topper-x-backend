@@ -139,19 +139,147 @@ const ROADMAPS = {
 
 };
 
-// ================= EXPORT =================
-export default ROADMAPS;
+// ---------------- STUDY MATERIAL (CLASS 6–12) ---------------- 
+const STUDY = {
+  "class 6 maths": {
+    chapters: [
+      "Knowing Our Numbers",
+      "Whole Numbers",
+      "Playing with Numbers",
+      "Basic Geometrical Ideas",
+      "Understanding Elementary Shapes",
+      "Integers",
+      "Fractions",
+      "Decimals",
+      "Mensuration",
+      "Data Handling"
+    ],
+    formulas: [
+      "Perimeter of rectangle = 2(l + b)",
+      "Area of rectangle = l * b",
+      "Perimeter of square = 4a",
+      "Area of square = a^2"
+    ],
+    practice: {
+      easy: [
+        { q: "15 + 27", ans: "42" },
+        { q: "100 - 45", ans: "55" }
+      ],
+      moderate: [
+        { q: "Find perimeter of square of side 5 cm", ans: "20 cm" },
+        { q: "Simplify 3/4 + 2/4", ans: "5/4" }
+      ],
+      hard: [
+        { q: "Find area of rectangle with l=8, b=5", ans: "40 sq units" }
+      ]
+    }
+  },
 
-// ---------------- STUDY MATERIAL (CLASS 6–12) ---------------- const STUDY = { "class 6 maths": { chapters: ["Numbers", "Algebra Basics", "Geometry", "Fractions", "Decimals"], formulas: ["Area = l × b", "Perimeter of square = 4a"], practice: { easy: [{ q: "2 + 3", ans: "5" }], moderate: [{ q: "5x + 3 = 18", ans: "x = 3" }], hard: [{ q: "Factorize x² + 5x + 6", ans: "(x+2)(x+3)" }] } },
+  "class 7 maths": {
+    chapters: [
+      "Integers",
+      "Fractions and Decimals",
+      "Data Handling",
+      "Simple Equations",
+      "Lines and Angles",
+      "Triangles",
+      "Congruence of Triangles",
+      "Comparing Quantities",
+      "Rational Numbers",
+      "Perimeter and Area"
+    ],
+    formulas: [
+      "Area of triangle = 1/2 * b * h",
+      "Perimeter of circle = 2 * π * r",
+      "Profit = SP - CP",
+      "Loss = CP - SP"
+    ],
+    practice: {
+      easy: [
+        { q: "(-5) + 8", ans: "3" },
+        { q: "Convert 0.75 into fraction", ans: "3/4" }
+      ],
+      moderate: [
+        { q: "Solve 3x + 7 = 16", ans: "x = 3" },
+        { q: "Find area of triangle b=10, h=6", ans: "30 sq units" }
+      ],
+      hard: [
+        { q: "Find x if 5x - 9 = 16", ans: "x = 5" }
+      ]
+    }
+  },
 
-"class 7 maths": { chapters: ["Integers", "Algebra", "Triangles", "Circles"], formulas: ["½ × b × h", "2πr"], practice: { easy: [{ q: "7 + 8", ans: "15" }], moderate: [{ q: "3x + 7 = 16", ans: "x = 3" }], hard: [{ q: "x² + 7x + 12", ans: "(x+3)(x+4)" }] } },
+  "class 8 maths": {
+    chapters: [
+      "Rational Numbers",
+      "Linear Equations in One Variable",
+      "Understanding Quadrilaterals",
+      "Practical Geometry",
+      "Data Handling",
+      "Squares and Square Roots",
+      "Cubes and Cube Roots",
+      "Comparing Quantities",
+      "Mensuration",
+      "Algebraic Expressions"
+    ],
+    formulas: [
+      "Square of a number = a^2",
+      "Cube of a number = a^3",
+      "Simple Interest = (P * R * T) / 100",
+      "Total surface area of cube = 6a^2"
+    ],
+    practice: {
+      easy: [
+        { q: "Find square of 12", ans: "144" },
+        { q: "Find cube of 5", ans: "125" }
+      ],
+      moderate: [
+        { q: "Solve 2x + 5 = 15", ans: "x = 5" },
+        { q: "Find SI if P=1000, R=5, T=2", ans: "100" }
+      ],
+      hard: [
+        { q: "Find x if 3x - 7 = 11", ans: "x = 6" }
+      ]
+    }
+  },
 
-"class 8 maths": { chapters: ["Rational Numbers", "Linear Equations", "Mensuration"], formulas: ["6a²", "a³"], practice: { easy: [{ q: "2 + 2", ans: "4" }], moderate: [{ q: "2x + 5 = 15", ans: "x = 5" }], hard: [{ q: "x² + 5x + 6", ans: "(x+2)(x+3)" }] } },
-
-"class 9 maths": { chapters: ["Polynomials", "Triangles", "Probability"], formulas: ["(a+b)²"], practice: { easy: [{ q: "3 + 4", ans: "7" }], moderate: [{ q: "3x − 4 = 11", ans: "x = 5" }], hard: [{ q: "x² + 7x + 10", ans: "(x+5)(x+2)" }] } } };
-
-// ---------------- CLASS 10–12 ADDITION ----------------
-
+  "class 9 maths": {
+    chapters: [
+      "Number Systems",
+      "Polynomials",
+      "Coordinate Geometry",
+      "Linear Equations in Two Variables",
+      "Introduction to Euclid Geometry",
+      "Lines and Angles",
+      "Triangles",
+      "Quadrilaterals",
+      "Areas of Parallelograms",
+      "Circles",
+      "Surface Areas and Volumes",
+      "Statistics",
+      "Probability"
+    ],
+    formulas: [
+      "(a + b)^2 = a^2 + 2ab + b^2",
+      "(a - b)^2 = a^2 - 2ab + b^2",
+      "Area of circle = πr^2",
+      "Volume of cube = a^3"
+    ],
+    practice: {
+      easy: [
+        { q: "Evaluate (2 + 3)^2", ans: "25" },
+        { q: "Find value of π (approx)", ans: "3.14" }
+      ],
+      moderate: [
+        { q: "Solve 3x - 4 = 11", ans: "x = 5" },
+        { q: "Find area of circle r=7", ans: "154 sq units" }
+      ],
+      hard: [
+        { q: "Factorize x^2 + 7x + 10", ans: "(x+5)(x+2)" }
+      ]
+    }
+  },
+  
 STUDY["class 10 maths"] = {
 chapters: [
 "Real Numbers",
